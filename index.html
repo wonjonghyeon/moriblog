@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-logo"><strong>moriblog</strong><br>200x200</div>
+            <div class="header-media">
+                <!-- 이미지, GIF, 또는 비디오를 여기에 삽입 -->
+                <span>Record, Like the First<br>500x200</span>
+                <!-- 예시: <img src="your-image.jpg" alt="헤더 이미지"> -->
+                <!-- 예시: <video autoplay loop muted><source src="your-video.mp4" type="video/mp4"></video> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="year-button active" onclick="showYear(2026)">2026년</button>
+            <button class="year-button" onclick="showYear(2025)">2025년</button>
+            <button class="year-button" onclick="showYear(2024)">2024년</button>
+        </div>
+
+        <div class="main-content">
+            <div id="gallery-2026" class="gallery-content active">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 1</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2026 프로젝트 1</h3>
+                            <p>2026년 첫 번째 프로젝트에 대한 설명입니다. 이곳에 프로젝트의 주요 내용과 특징을 작성할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 2</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2026 프로젝트 2</h3>
+                            <p>두 번째 프로젝트 소개글입니다. 프로젝트의 목표와 성과를 간략하게 설명합니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 3</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2026 프로젝트 3</h3>
+                            <p>세 번째 프로젝트에 대한 설명입니다. 프로젝트의 특별한 점을 강조합니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 4</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2026 프로젝트 4</h3>
+                            <p>네 번째 프로젝트 소개입니다. 주요 기능과 특징을 설명합니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 5</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2026 프로젝트 5</h3>
+                            <p>다섯 번째 프로젝트에 대한 소개글입니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 6</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2026 프로젝트 6</h3>
+                            <p>여섯 번째 프로젝트 설명입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery-2025" class="gallery-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 1</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2025 프로젝트 1</h3>
+                            <p>2025년 첫 번째 프로젝트 소개글입니다. 지난 해의 성과를 확인할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 2</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2025 프로젝트 2</h3>
+                            <p>2025년 두 번째 프로젝트에 대한 설명입니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 3</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2025 프로젝트 3</h3>
+                            <p>세 번째 프로젝트 소개글입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery-2024" class="gallery-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 1</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2024 프로젝트 1</h3>
+                            <p>2024년 첫 번째 프로젝트입니다. 초기 단계의 작업들을 소개합니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 2</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2024 프로젝트 2</h3>
+                            <p>2024년 두 번째 프로젝트 설명입니다.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <span>이미지 3</span>
+                        </div>
+                        <div class="gallery-description">
+                            <h3>2024 프로젝트 3</h3>
+                            <p>세 번째 프로젝트에 대한 소개글입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Tel</strong>
+                            <p>+82-010-2164-8086</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>contact@moriblog.kr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <p>충남 천안시 서북구 업성1길 63, <br>제일전기기술단</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 moriblog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
