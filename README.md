@@ -1,0 +1,2 @@
+# moriblog
+blog repository
